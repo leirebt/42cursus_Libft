@@ -58,7 +58,7 @@ LIB	= ar rc
 all	:	$(NAME)
 
 $(NAME)	:	$(SRC_O) $(BONUS_O)
-	$(LIB) $@ $^
+	$(LIB) $@ $<
 
 %.o	:	%.c libft.h
 	$(CC) $(CFLAGS) -c $<
